@@ -9,9 +9,12 @@ root.render(
   
   // <App />  // self closing tab
   <div>
+
     <Person />
+
     {/* <App />
     <App /> */}
+    
   </div>
 
 );

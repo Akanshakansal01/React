@@ -4,7 +4,7 @@ import './Person.css'
 
 const Person = () => {
   return (
-    <div className='person'>
+    <div style={{color:"brown",padding:"20px"}} className='person'>
         
         
         <p> Name : John Doe </p>
