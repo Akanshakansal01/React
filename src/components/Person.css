@@ -1,9 +1,10 @@
 .person{
 
     width: fit-content;
-    border: 2px xolid black;
+    border: 1px xolid black;
     font-size: 24px;
     background-color: rgb(168, 240, 157);
     margin: 100px auto;
-    
+    box-shadow: 3px 5px 5px rgb(248, 113, 113);
+
 }
