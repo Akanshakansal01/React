@@ -13,9 +13,9 @@ root.render(
   <div>
 
     <TodoList />
-
-    {/* <App />
-    <App /> */}
+    <Person />
+    <App />
+    <App />
 
   </div>
 
