@@ -12,10 +12,11 @@ root.render(
   // <App />  // self closing tab
   <div>
 
-    <TodoList />
-    <Person />
+    {/* <TodoList /> */}
+    
+    {/* <Person /> */}
     <App />
-    <App />
+    {/* <App /> */}
 
   </div>
 

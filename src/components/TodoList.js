@@ -15,7 +15,7 @@ const TodoList = () => {
     <ul>
         {
             Todo.map((todo)=>{
-                return <li> {todo.name} </li> 
+                return <li> {todo.name} ,<input type='checkbox' defaultChecked={todo.isDone}></input></li> 
             })
         }
     </ul>
