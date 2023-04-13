@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Person from './components/Person';
 import TodoList from './components/TodoList';
+import ShoppingList from './components/ShoppingList/ShoppingList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,8 +16,9 @@ root.render(
     {/* <TodoList /> */}
     
     {/* <Person /> */}
-    <App />
     {/* <App /> */}
+    {/* <App /> */}
+    <ShoppingList />
 
   </div>
 
