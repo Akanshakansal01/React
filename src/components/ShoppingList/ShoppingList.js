@@ -31,7 +31,7 @@ const ShoppingList = (product) => {
 
         const addProduct=(producte)=>{
 
-            return setProducts([...initialProducts,product])
+            return setProducts([...products,product])
 
         }
 
