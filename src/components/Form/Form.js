@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Form.css'
 
-const Form = () => {
+const Form = (props) => {
 
     // useState is used to return an array
     const[name,setName]=useState("");
@@ -23,6 +23,7 @@ const Form = () => {
     const formEventHandler=(event)=>{
 
         event.preventDefault()
+        props.addProduct({name,price,imgUrl:url})
         console.log(name);
         console.log(price);
         console.log(url);

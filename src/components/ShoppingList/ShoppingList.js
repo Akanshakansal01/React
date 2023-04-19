@@ -28,9 +28,10 @@ const ShoppingList = (product) => {
         ]
 
         const [products,setProducts]=useState(initialProducts);
-        const addProducts=()=>{
 
-            
+        const addProduct=(producte)=>{
+
+            return setProducts([...initialProducts,product])
 
         }
 
@@ -38,7 +39,7 @@ const ShoppingList = (product) => {
     <div>
 
 
-        <Form />
+        <Form addProduct={addProduct}/>
 
 
         {
