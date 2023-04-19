@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-const Toggle = (initialValue=true) => {
+const useToggle = (initialValue=true) => {
 
     const [toggle,isToggle]=useState(initialValue);
 
@@ -11,4 +11,4 @@ const Toggle = (initialValue=true) => {
   return [toggle,updateToggle]
 }
 
-export default Toggle
+export default useToggle
