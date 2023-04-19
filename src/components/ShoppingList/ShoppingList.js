@@ -1,10 +1,10 @@
 import Form from "../Form/Form";
 import Product from "../Products/Product";
-import React from 'react'
+import React,{useState} from 'react'
 
 const ShoppingList = (product) => {
 
-        const products=[
+        const initialProducts=[
             {
                 name:"iphone 11",
                 image_URL:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbfE6B9-PCaRFHDXUtFquGzFQmflYg9AtCA&usqp=CAU",
@@ -26,6 +26,13 @@ const ShoppingList = (product) => {
                 price: 250
             }
         ]
+
+        const [products,setProducts]=useState(initialProducts);
+        const addProducts=()=>{
+
+            
+
+        }
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import './Product.css'
 
 const Product = (props) => {
 
@@ -15,7 +16,7 @@ const Product = (props) => {
       increase(quantity+1);
     }
   return (
-    <figure onClick={priceChangeHandler} style={{width:"200px", border:"2px solid black"}}>
+    <figure className='product' onClick={priceChangeHandler} style={{width:"200px", border:"2px solid black"}}>
         
         <img style={{width:"150px"}} src={props.image} alt={props.name}></img>
         <p> Name: {props.name} </p>

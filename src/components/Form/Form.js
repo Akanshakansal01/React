@@ -1,30 +1,60 @@
-import React from 'react'
+import React,{useState} from 'react'
+import './Form.css'
 
 const Form = () => {
+
+    // useState is used to return an array
+    const[name,setName]=useState("");
+    const[price,setPrice]=useState(0);
+    const[url,setUrl]=useState("");
+
+    const nameChangeHandler=(e)=>{
+        setName(e.target.value)
+    }
+
+    const priceChangeHandler=(e)=>{
+        setPrice(e.target.value)
+    }
+
+    const urlChangeHandler=(e)=>{
+        setUrl(e.target.value)
+    }
+
+    const formEventHandler=(event)=>{
+
+        event.preventDefault()
+        console.log(name);
+        console.log(price);
+        console.log(url);
+
+    }
+
   return (
-    
-    <form>
+
+    <form onSubmit={formEventHandler}>
 
         <div>
 
             <label htmlFor='name'>Product Name</label>
-            <input type='text' id='product' placeholder='name'></input>
+            <input onChange={nameChangeHandler} type='text' id='product' placeholder='name'></input>
 
         </div>
 
         <div>
 
             <label htmlFor='name'>Price</label>
-            <input type='number' id='price' placeholder='price'></input>
+            <input onChange={priceChangeHandler} type='number' id='price' placeholder='price'></input>
 
         </div>
 
         <div>
 
             <label htmlFor='name'>Image Url</label>
-            <input type='text' id='image' placeholder='image'></input>
+            <input onChange={urlChangeHandler} type='text' id='image' placeholder='image'></input>
 
         </div>
+
+        <button> Add Products </button>
 
     </form>
     
